@@ -293,11 +293,12 @@
         }
         showSlides(); // Initialize slideshow
 
-        // Function to scroll to Reservation section
-        function scrollToReservation() {
-            const reservationSection = document.getElementById('reservation');
-            reservationSection.scrollIntoView({ behavior: 'smooth' });
-        }
+        // Function to scroll to Reservation section and close the sidebar
+function scrollToReservation() {
+    const reservationSection = document.getElementById('reservation');
+    reservationSection.scrollIntoView({ behavior: 'smooth' });
+    closeMenu(); // Close the sidebar
+}
 
         // Function for next/previous slide
         function plusSlides(n) {
